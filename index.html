@@ -13,9 +13,9 @@
     <title>Validación avanzada formulario</title>
   </head>
   <body>
-    <form class="content" action="procesar.php" id="miFormulario">
+    <form class="content" action="process.php" id="miFormulario">
       <h1>Form</h1>
-      <label for="name">Name:*</label>
+      <label for="name" class="labels">Name:*</label>
       <input
         type="text"
         name="name"
@@ -26,7 +26,7 @@
         title="Introduce between 2 y 15 characters"
         required
       />
-      <label for="age">Age:*</label>
+      <label for="age" class="labels">Age:*</label>
       <input
         type="number"
         name="age"
@@ -36,7 +36,7 @@
         max="100"
         required
       />
-      <label for="phone">Phone:*</label>
+      <label for="phone" class="labels">Phone:*</label>
       <input
         type="text"
         name="phone"
@@ -47,8 +47,8 @@
         required
       />
       <p id="errorMessage"></p>
-      <input type="submit" value="Send" id="send" />
-      <input type="reset" value="Delete" id="delete" />
+      <input type="submit" value="Send" id="send" class="btn" />
+      <input type="reset" value="Delete" id="delete" class="btn" />
     </form>
   </body>
 </html>

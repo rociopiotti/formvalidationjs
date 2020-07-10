@@ -11,16 +11,27 @@ body {
   flex-direction: column;
   align-content: center;
   justify-content: space-around;
+  margin-top: 15vh;
 }
 
 input::placeholder {
   font-size: 0.8em;
   font-weight: 200;
-  
 }
 #errorMessage {
   color: #4949f5;
 }
 .error {
-  border: solid 2px #CC0000;
+  border: solid 2px #cc0000;
+}
+
+.btn,
+.labels {
+  margin-top: 2.5vh;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 80vw;
+  }
 }
