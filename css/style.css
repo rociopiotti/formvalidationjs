@@ -1,0 +1,26 @@
+body {
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.content {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+input::placeholder {
+  font-size: 0.8em;
+  font-weight: 200;
+  
+}
+#errorMessage {
+  color: #4949f5;
+}
+.error {
+  border: solid 2px #CC0000;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/validate.js"></script>
+    <title>Validación avanzada formulario</title>
+  </head>
+  <body>
+    <form class="content" action="procesar.php" id="miFormulario">
+      <h1>Form</h1>
+      <label for="name">Name:*</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        maxlength="15"
+        pattern="[A-Za-z]{2,15}"
+        title="Introduce between 2 y 15 characters"
+        required
+      />
+      <label for="age">Age:*</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="Age"
+        min="18"
+        max="100"
+        required
+      />
+      <label for="phone">Phone:*</label>
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        pattern="[0-9]{9}"
+        title="Number of 9 digits"
+        placeholder="Phone"
+        required
+      />
+      <p id="errorMessage"></p>
+      <input type="submit" value="Send" id="send" />
+      <input type="reset" value="Delete" id="delete" />
+    </form>
+  </body>
+</html>
